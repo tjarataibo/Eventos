@@ -25,11 +25,13 @@ window.onload = () => {   //este código se va a ejecutar si sólo si la página
         }
         updateBoxes();
     });
+    //Agregué función que hace posible el contador de carácteres
+    cuenta = () =>{ 
+        document.forms[0].caracteres.value=document.forms[0].userInputBox.value.length 
+    }}; 
     userInputBox.addEventListener("input", ()=>{
         updateBoxes();
     });
-};
-
 
 
 //La función ya está declarada, sólo se invoca

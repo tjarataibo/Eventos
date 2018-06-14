@@ -5,7 +5,14 @@
         <script src="app.js"></script>
     </head>
     <body>
-        <textarea id="userInputBox"></textarea>   <!--Todos los elementos que poseen un id, quedan como variables globales-->
+         <!--Doy una caja para escribir mensaje y a la vez, un campo de texto donde se mostrarán los carácteres escritos-->
+        <form action="#" method="post"> 
+        <textarea id="userInputBox" onKeyDown="cuenta()" onKeyUp="cuenta()"></textarea>   <!--Todos los elementos que poseen un id, quedan como variables globales-->
+        <tr> 
+            <td>Carácteres:</td> 
+            <td><input type="text" name=caracteres size=4></td> 
+        </tr> 
+        </form>
         <textarea id="result"></textarea>
         <button id="buttoncillo">CIFRAR</button>
     </body>
